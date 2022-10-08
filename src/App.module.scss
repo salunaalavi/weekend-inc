@@ -25,30 +25,30 @@
   }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.large {
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.regular {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.small {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
 }
 
 @keyframes App-logo-spin {

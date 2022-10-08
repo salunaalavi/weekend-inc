@@ -5,8 +5,14 @@ function App() {
     return (
         <div className={styles.App}>
             <header className={styles.App__header}>
+                <h1 className={`uppercase`}>
+                    WEEKEND FROM HOME
+                </h1>
+                <h2>
+                    WEEKEND FROM HOME
+                </h2>
                 <img src={logo} className={styles.App__logo} alt="logo" />
-                <p>
+                <p className={`${styles.large} ${styles.bold}`}>
                     Edit <code>src/App.js</code> and save to reload.
                 </p>
                 <a

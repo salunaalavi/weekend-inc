@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
     content: [
         "./src/**/*.{js,jsx,ts,tsx}",
@@ -18,5 +20,40 @@ module.exports = {
             'tulip': '#FF8787',
         },
     },
-    plugins: [],
+    plugins: [
+        plugin(({ addBase }) => {
+            addBase({
+                'h1': {
+                    fontSize: '62px',
+                    lineHeight: '51px',
+                    fontWeight: '900',
+                },
+                'h2': {
+                    fontSize: '32px',
+                    lineHeight: '37.5px',
+                    fontWeight: '900',
+                },
+                'h3': {
+                    fontSize: '21px',
+                    lineHeight: '25px',
+                    fontWeight: '700',
+                },
+                'h4': {
+                    fontSize: '19px',
+                    lineHeight: '31px',
+                    fontWeight: '700',
+                },
+                'h5': {
+                    fontSize: '16px',
+                    lineHeight: '19px',
+                    fontWeight: '700',
+                },
+                'p': {
+                    fontSize: '18px',
+                    lineHeight: '27px',
+                    fontWeight: '400',
+                },
+            })
+        })
+    ],
 }
