@@ -4,7 +4,7 @@ import styles from './App.module.scss';
 function App() {
     return (
         <div className={styles.App}>
-            <header className={styles.App__header}>
+            <div className={styles.App__header}>
                 <h1 className={`uppercase`}>
                     WEEKEND FROM HOME
                 </h1>
@@ -44,7 +44,7 @@ function App() {
                 >
                     Learn React
                 </a>
-            </header>
+            </div>
         </div >
     );
 }
