@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .large {
+        font-size: 21px;
+        line-height: 32px;
+        font-weight: 500;
+    }
+        
+    .regular {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+        
+    .small {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+    }
+}

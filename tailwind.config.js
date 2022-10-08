@@ -6,7 +6,11 @@ module.exports = {
         "./src/**/*.{js,jsx,ts,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            bold: {
+                fontWeight: '700',
+            },
+        },
         fontFamily: {
             'sans': 'Work Sans, sans-serif',
         },
