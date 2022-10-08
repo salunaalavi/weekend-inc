@@ -1,9 +1,11 @@
 import styles from "./styles.module.scss";
 
-const Header = () => (
-    <div className={styles.layout}>
-        ini header
-    </div>
+const Header = (props) => (
+    <header {...props}>
+        <div className={styles.header}>
+            Ini Header
+        </div>
+    </header>
 );
 
 export default Header;

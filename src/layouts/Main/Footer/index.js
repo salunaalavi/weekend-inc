@@ -1,9 +1,11 @@
 import styles from "./styles.module.scss";
 
 const Footer = (props) => (
-    <div className={styles.layout} {...props}>
-        Ini Header...
-    </div>
+    <footer {...props}>
+        <div className={styles.footer}>
+            Ini Footer
+        </div>
+    </footer>
 );
 
 export default Footer;
