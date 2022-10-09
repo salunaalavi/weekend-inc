@@ -56,6 +56,7 @@ module.exports = {
                     fontSize: '18px',
                     lineHeight: '27px',
                     fontWeight: '400',
+                    letterSpacing: '-0.571429px',
                 },
             })
         })
