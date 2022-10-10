@@ -20,7 +20,12 @@
 .slick-list {
   width: 100%;
   padding: 0 15px;
-  margin: 0px 25px;
+  margin: 0px 35px;
+}
+
+.slick-arrow {
+  width: 32px;
+  height: auto;
 }
 
 .slick-prev {
@@ -38,7 +43,7 @@
 
   .slick-list {
     margin: 0;
-    padding: 0 22px;
+    padding: 0 32px;
   }
 
   .slick-arrow {
