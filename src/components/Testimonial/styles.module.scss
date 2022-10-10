@@ -1,0 +1,34 @@
+.testimonial {
+  height: 96px;
+  isolation: isolate;
+}
+
+.wrapper {
+  top: -110px;
+  width: 735px;
+}
+
+.container {
+  padding: 152px 374px 0;
+}
+
+.testimonialTitle {
+  text-align: center;
+}
+
+@media screen and (max-width: 375px), (max-width: 640px), (max-width: 960px) {
+  .wrapper {
+    top: -115px;
+    width: 100%;
+  }
+
+  .testimonial {
+    height: 94px;
+    margin-top: 0;
+  }
+
+  .testimonialTitle {
+    text-align: start;
+    margin-left: 32px;
+  }
+}
