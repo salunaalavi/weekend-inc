@@ -1,0 +1,35 @@
+.textSection0 {
+  padding: 96px 374px 0;
+}
+
+.textSection1 {
+  padding: 67px 374px 0;
+}
+
+.textSection2 {
+  padding: 127px 374px 203px;
+}
+
+.desc {
+  margin-top: 30px;
+  letter-spacing: -0.642857px;
+}
+
+@media screen and (max-width: 375px), (max-width: 640px), (max-width: 960px) {
+  .textSection0,
+  .textSection1,
+  .textSection2 {
+    text-align: start;
+    padding: 67px 32px 0;
+  }
+
+  .textSection2 {
+    padding-bottom: 404px;
+  }
+
+  .desc {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.571429px;
+  }
+}

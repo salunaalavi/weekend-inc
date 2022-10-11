@@ -1,0 +1,96 @@
+.wrapper {
+  width: 311px;
+  height: 176px;
+  isolation: isolate;
+
+  &:hover {
+    .blackBar {
+      animation-name: tipsOn;
+      animation-duration: 0.5s;
+      height: 100%;
+    }
+    .contentWrapper {
+      animation-name: tipsOn;
+      animation-duration: 0.5;
+      height: 100%;
+    }
+    .arrow {
+      animation-name: rotateOn;
+      animation-duration: 0.5s;
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blackBar {
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  animation-name: tipsOff;
+  animation-duration: 1s;
+  opacity: 0.5;
+}
+
+.contentWrapper {
+  bottom: 0;
+  width: 100%;
+  height: 72px;
+  animation-name: tipsOff;
+  animation-duration: 1s;
+  padding: 0 25px 0 20px;
+}
+
+.title {
+  width: 218px;
+  height: 38px;
+  filter: invert(1%) sepia(92%) saturate(28%) hue-rotate(200deg)
+    brightness(106%) contrast(106%);
+}
+
+.arrow {
+  width: 32px;
+  height: auto;
+  animation-name: rotateOff;
+  animation-duration: 1s;
+}
+
+@keyframes tipsOn {
+  0% {
+    height: 72px;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes tipsOff {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 72px;
+  }
+}
+
+@keyframes rotateOn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateOff {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

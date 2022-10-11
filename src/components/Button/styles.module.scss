@@ -1,0 +1,51 @@
+$tulip: #ff8787;
+$white: #ffffff;
+$black: #000000;
+
+.button {
+  box-sizing: border-box;
+  color: black;
+  padding: 19px 84px;
+  border-radius: 29px;
+  position: absolute;
+  top: 200px;
+  animation-name: buttonOff;
+  animation-duration: 1s;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 30px 30px -10px $tulip, inset 0 -60px 0 0 $tulip;
+    color: $white;
+    transform: translateY(-8px);
+    animation-name: buttonOn;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes buttonOn {
+  0% {
+    box-shadow: 0 0 0 0 $tulip, inset 0 0 0 0 $tulip;
+    color: $black;
+    transform: translateY(0);
+  }
+
+  100% {
+    box-shadow: 0 30px 30px -10px $tulip, inset 0 -60px 0 30px $tulip;
+    color: $white;
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes buttonOff {
+  0% {
+    box-shadow: 0 30px 30px -10px $tulip, inset 0 60px 0 30px $tulip;
+    color: $white;
+    transform: translateY(-8px);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 $tulip, inset 0 0 0 0 $tulip;
+    color: $black;
+    transform: translateY(0);
+  }
+}

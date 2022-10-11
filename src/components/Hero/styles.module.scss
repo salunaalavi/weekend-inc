@@ -1,0 +1,42 @@
+.hero {
+  background: url("../../assets/ornaments/hero-background.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -67px;
+  height: 665px;
+}
+
+.title {
+  margin-top: 84px;
+}
+
+.subTitle {
+  margin-top: 20px;
+}
+
+.wrapper {
+  background: url("../../assets/ornaments/lego.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 305px;
+  margin-top: 67px;
+}
+
+@media screen and (max-width: 375px), (max-width: 640px), (max-width: 960px) {
+  .hero {
+    background-size: auto;
+    height: 600px;
+  }
+
+  .title {
+    font-size: 52px;
+    height: 102px;
+    margin-top: 67px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
