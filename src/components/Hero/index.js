@@ -1,3 +1,4 @@
+import Button from "../Button";
 import styles from './styles.module.scss';
 
 const Hero = () => (
@@ -10,11 +11,9 @@ const Hero = () => (
                 Stay active with a little workout.
             </h3>
             <div className={`relative flex ${styles.wrapper} justify-center`}>
-                <button className={`bg-white`}>
-                    <h5 className={`font-normal text-black`}>
-                        Let's Go
-                    </h5>
-                </button>
+                <Button>
+                    Let's Go
+                </Button>
             </div>
         </div>
     </div>
