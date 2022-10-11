@@ -7,12 +7,12 @@
   height: 665px;
 }
 
-h1 {
+.title {
   margin-top: 84px;
 }
 
-h3 {
-  margin-top: 30px;
+.subTitle {
+  margin-top: 20px;
 }
 
 .wrapper {
@@ -29,13 +29,13 @@ h3 {
     height: 600px;
   }
 
-  h1 {
+  .title {
     font-size: 52px;
     height: 102px;
     margin-top: 67px;
   }
 
-  h3 {
+  .subTitle {
     font-size: 16px;
     line-height: 19px;
   }
