@@ -2,9 +2,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Card from "./components/Card";
-import styles from './styles.module.scss';
 import arrow from "../../assets/icons/arrow.svg";
-import './slick.css';
+import styles from "./styles.module.scss";
+import "./slick.css";
 
 const SampleNextArrow = (props) => {
     const { className, style, onClick } = props;
@@ -32,7 +32,7 @@ const SamplePrevArrow = (props) => {
     );
 }
 
-const Testimonial = () => {
+const Testimonial = (props) => {
     const settings = {
         className: "slider variable-width",
         dots: false,
@@ -81,12 +81,11 @@ const Testimonial = () => {
                     Testimonial
                 </h2>
                 <Slider {...settings}>
-                    <Card style={{ width: 247 }} title="Blu Kicks" content="Places where you can leverage tools and software to free up time to focus on growing the business." />
-                    <Card style={{ width: 247 }} title="Blu Kicks" content="Places where you can leverage tools and software to free up time to focus on growing the business." />
-                    <Card style={{ width: 247 }} title="Blu Kicks" content="Places where you can leverage tools and software to free up time to focus on growing the business." />
-                    <Card style={{ width: 247 }} title="Blu Kicks" content="Places where you can leverage tools and software to free up time to focus on growing the business." />
-                    <Card style={{ width: 247 }} title="Blu Kicks" content="Places where you can leverage tools and software to free up time to focus on growing the business." />
-                    <Card style={{ width: 247 }} title="Blu Kicks" content="Places where you can leverage tools and software to free up time to focus on growing the business." />
+                    {
+                        props.testimonies && props.testimonies.map(({ id, testimony, by }) => (
+                            <Card key={id} style={{ width: 247 }} title={by} content={testimony} />
+                        ))
+                    }
                 </Slider>
             </div>
         </div>

@@ -1,3 +1,17 @@
+import axios from "axios";
+
+const Axios = axios.create({
+    baseURL: process.env.REACT_APP_API_URL,
+})
+
+export const getTestimonies = () => (
+    Axios.get("testimonial")
+);
+
+export const getTips = () => (
+    Axios.get("help-tips")
+)
+
 export const textSection = [
     {
         id: 0,

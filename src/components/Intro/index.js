@@ -1,6 +1,6 @@
 import legoMini from "../../assets/ornaments/lego-path-mini.svg";
 import blueCircle from "../../assets/ornaments/bluebonnet-circle.svg";
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
 const Intro = () => (
     <div className={`relative flex ${styles.intro} justify-center`}>
@@ -10,7 +10,7 @@ const Intro = () => (
                 ability, or performance to exhaust (something, such as a mine) by working to devise, arrange,
                 or achieve by resolving difficulties. Merriam-Webster.com Dictionary.
             </p>
-            <h3 className="text-white italic font-normal">
+            <h3 className={`${styles.quote} text-white italic font-normal`}>
                 ~weekend team
             </h3>
         </div>
